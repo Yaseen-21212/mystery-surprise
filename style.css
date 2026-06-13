@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.surprise-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff4757;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+    transition: all 0.3s ease;
+}
+
+.surprise-btn:hover {
+    background: #ff6b81;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 71, 87, 0.6);
+}
+
+.surprise-btn:active {
+    transform: translateY(-1px);
+}
+
+/* NEW: Styles for the image under the button */
+.image-container {
+    margin-top: 25px; /* Adds space between the button and the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    max-width: 100%;  /* Ensures the image never overflows the card */
+    height: auto;     /* Maintains the image's aspect ratio */
+    border-radius: 8px; /* Slightly rounds the image corners to match the theme */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Gives it a slight depth */
+}
